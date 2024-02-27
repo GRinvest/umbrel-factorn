@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log
+/.idea/
+/tls.cert
+*.log
+*.env
+logs/
+*.bak
+lb_settings.json
+.nyc_output
+coverage
+.todo
+data/
+.env.local
+*.yml
