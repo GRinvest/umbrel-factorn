@@ -7,7 +7,7 @@
       <b-alert variant="warning" show class="mb-3">
         <small>
           Be careful when changing the settings below as they may cause issues 
-          with other apps on your Umbrel that connect to your BitcoinPoW node. Only make 
+          with other apps on your Umbrel that connect to your Fact0rn node. Only make 
           changes if you understand the potential effects on connected apps or 
           wallets.
         </small>
@@ -170,7 +170,7 @@
                   </div>
                 </div>
                 <small class="w-lg-75 d-block text-muted mt-1">
-                  Broadcast your node to the BitcoinPoW network to help other nodes 
+                  Broadcast your node to the Fact0rn network to help other nodes 
                   access the blockchain. You may need to set up port forwarding on 
                   your router to allow incoming connections from clearnet-only peers.
                 </small>
@@ -617,7 +617,7 @@
                 </div>
                 <small class="w-lg-75 d-block text-muted mt-1">
                   Choose the size of the UTXO set to store in RAM. A larger cache can 
-                  speed up the initial synchronization of your BitcoinPoW node, but after 
+                  speed up the initial synchronization of your Fact0rn node, but after 
                   the initial sync is complete, a larger cache value does not significantly 
                   improve performance and may use more RAM than needed.
                 </small>
@@ -649,7 +649,7 @@
                   </div>
                 </div>
                 <small class="w-lg-75 d-block text-muted mt-1">
-                  Allow any transaction in the mempool of your BitcoinPoW node to be replaced with
+                  Allow any transaction in the mempool of your Fact0rn node to be replaced with
                   a newer version of the same transaction that includes a higher fee.
                 </small>
               </div>
@@ -986,7 +986,7 @@
           </b-col>
           <b-col cols="12" lg="6">
             <b-button class="mt-2 mt-lg-0" variant="success" type="submit" block :disabled="isSettingsDisabled">
-              Save and Restart BitcoinPoW Node</b-button
+              Save and Restart Fact0rn Node</b-button
             >
           </b-col>
         </b-row>

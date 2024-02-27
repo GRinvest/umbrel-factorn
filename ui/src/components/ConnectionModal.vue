@@ -1,10 +1,10 @@
-<template v-slot:modal-header="{ close }" title="Connect to BitcoinPoW Node">
+<template v-slot:modal-header="{ close }" title="Connect to Fact0rn Node">
   <div
     class="px-2 px-sm-3 pt-2 d-flex flex-column justify-content-between w-100 mt-n4"
   >
-    <h3>Connect to BitcoinPoW Node</h3>
+    <h3>Connect to Fact0rn Node</h3>
     <p class="text-muted mb-md-4">
-        Connect any wallet that supports BitcoinPoW Core's RPC or P2P connection to your node using these details.
+        Connect any wallet that supports Fact0rn Core's RPC or P2P connection to your node using these details.
     </p>
     <div class="pb-2 pb-sm-3">
       <div class="row flex-column-reverse flex-lg-row">
@@ -30,7 +30,7 @@
               <b-col cols="12" lg="6">
                 <label class="mb-1 d-block"
                   ><small class="font-weight-bold"
-                    >BitcoinPoW Core RPC Username</small
+                    >Fact0rn Core RPC Username</small
                   ></label
                 >
                 <input-copy
@@ -49,7 +49,7 @@
               <b-col cols="12" lg="6">
                 <label class="mb-1 d-block"
                   ><small class="font-weight-bold"
-                    >BitcoinPoW Core RPC Password</small
+                    >Fact0rn Core RPC Password</small
                   ></label
                 >
                 <input-copy
@@ -68,7 +68,7 @@
               <b-col cols="12" lg="6">
                 <label class="mb-1 d-block"
                   ><small class="font-weight-bold"
-                    >BitcoinPoW Core RPC Address (Host)</small
+                    >Fact0rn Core RPC Address (Host)</small
                   ></label
                 >
                 <input-copy
@@ -87,7 +87,7 @@
               <b-col cols="12" lg="6">
                 <label class="mb-1 d-block"
                   ><small class="font-weight-bold"
-                    >BitcoinPoW Core RPC Port</small
+                    >Fact0rn Core RPC Port</small
                   ></label
                 >
                 <input-copy 
@@ -108,7 +108,7 @@
           <div v-if="chosenMode === 'p2pLocal' || chosenMode === 'p2pTor'">
             <label class="mb-1 d-block"
               ><small class="font-weight-bold"
-                >BitcoinPoW Core P2P Address (Host)</small
+                >Fact0rn Core P2P Address (Host)</small
               ></label
             >
             <div v-if="p2p.torAddress">
@@ -120,7 +120,7 @@
             </div>
             <label class="mb-1 d-block"
               ><small class="font-weight-bold"
-                >BitcoinPoW Core P2P Port</small
+                >Fact0rn Core P2P Port</small
               ></label
             >
             <div v-if="p2p.port">
@@ -135,7 +135,7 @@
         </div>
       </div>
       <p class="mt-2">
-        Looking for step-by-step instructions to connect your wallet to your BitcoinPoW node? <a href="https://link.umbrel.com/connect-bitcoin" target="_blank">Click here</a>.
+        Looking for step-by-step instructions to connect your wallet to your Fact0rn node? <a href="https://link.umbrel.com/connect-bitcoin" target="_blank">Click here</a>.
     </p>
     </div>
   </div>

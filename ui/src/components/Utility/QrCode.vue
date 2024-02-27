@@ -8,7 +8,7 @@
     <transition name="qr-logo-popup" appear>
       <img
         v-show="showLogo"
-        src="@/assets/umbrel-qr-icon.svg"
+        src="@/assets/umbrel-qr-FACT0RN_Logo_Dark128.png"
         class="qr-logo"
       />
     </transition>

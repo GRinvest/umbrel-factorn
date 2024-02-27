@@ -5,7 +5,7 @@
         <div class="d-flex flex-grow-1 justify-content-start align-items-start mb-3">
           <img
             class="app-icon mr-2 mr-sm-3"
-            src="@/assets/icon.svg"
+            src="@/assets/FACT0RN_Logo_Dark128.png"
           />
           <div>
             <svg
@@ -19,9 +19,9 @@
             </svg>
             <small v-if="isBitcoinCoreOperational" class="ml-1 text-success">Running</small>
             <small v-else class="ml-1 text-warning">Starting</small>
-            <h3 class="d-block font-weight-bold mb-1">BitcoinPoW Node</h3>
+            <h3 class="d-block font-weight-bold mb-1">Fact0rn Node</h3>
             <span class="d-block text-muted">{{
-              version ? `BitcoinPoW Core ${version}` : "..."
+              version ? `Fact0rn Core ${version}` : "..."
             }}</span>
           </div>
         </div>
@@ -76,12 +76,12 @@
           </b-dropdown>
         </div>
       </div>
-      <b-alert :show="showReindexCompleteAlert" variant="warning">Reindexing is now complete. Turn off "Reindex blockchain" in <span class="open-settings" @click="() => $bvModal.show('advanced-settings-modal')">advanced settings</span> to prevent reindexing every time BitcoinPoW Node restarts.</b-alert>
+      <b-alert :show="showReindexCompleteAlert" variant="warning">Reindexing is now complete. Turn off "Reindex blockchain" in <span class="open-settings" @click="() => $bvModal.show('advanced-settings-modal')">advanced settings</span> to prevent reindexing every time Fact0rn Node restarts.</b-alert>
 
     <b-alert :show="showReindexInProgressAlert" variant="info">Reindexing in progress...</b-alert>
 
     <b-alert :show="showRestartError" variant="danger" dismissible @dismissed="showRestartError=false">
-      Something went wrong while attempting to change the configuration of BitcoinPoW Node.
+      Something went wrong while attempting to change the configuration of Fact0rn Node.
     </b-alert>
     </div>
 
