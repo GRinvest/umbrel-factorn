@@ -59,9 +59,9 @@ for i in range(1, count_instance + 1):
             'DEVICE_DOMAIN_NAME': 'test.local',
             'BITCOIND_IP': f'{symbol}_{i}',
             'JSON_STORE_FILE': f"/data/{coin}-config.json",
-            'UMBREL_BITCOIN_CONF_FILE': f"/bitcoin/.bitcoin/{coin}.conf",
+            'UMBREL_BITCOIN_CONF_FILE': f"/bitcoin/.bitcoin/umbrel-{coin}.conf",
             'BITCOIN_CONF_FILE': f"/bitcoin/.bitcoin/{coin}.conf",
-            'BITCOIN_INITIALIZE_WITH_CLEARNET_OVER_TOR': False,
+            'BITCOIN_INITIALIZE_WITH_CLEARNET_OVER_TOR': 1,
         },
         'networks': [f'{symbol}_default']
     }
