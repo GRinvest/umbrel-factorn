@@ -270,7 +270,7 @@ function settingsToMultilineConfString(settings) {
   umbrelBitcoinConfig.push("");
   umbrelBitcoinConfig.push(`# Required to configure Tor control port properly`);
   umbrelBitcoinConfig.push(`[${settings.network}]`);
-  umbrelBitcoinConfig.push(`bind=0.0.0.0:8555`);
+  umbrelBitcoinConfig.push(`bind=0.0.0.0:30030`);
   umbrelBitcoinConfig.push(`# bind=${constants.BITCOIND_IP}:8334=onion`);
 
   return umbrelBitcoinConfig.join('\n');
