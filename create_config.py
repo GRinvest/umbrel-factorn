@@ -45,7 +45,7 @@ for i in range(1, count_instance + 1):
         },
         'ports': [f"{3000+i}:3005"],
         'volumes': [
-            f'/{symbol}/umbrel_data/app_{i}:/data',
+            f'/{symbol}/node_{i}/umbrel_data:/data',
             f'/{symbol}/node_{i}:/bitcoin/.bitcoin'
         ],
         'environment': {
