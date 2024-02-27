@@ -19,7 +19,7 @@ for i in range(1, count_instance + 1):
     # Настройки для btcw сервиса
     services[coind_service_name] = {
         'container_name': f'{symbol}_{i}',
-        'command': '-port=30030 -rpcport=8332 -rpcbind=0.0.0.0 -rpcallowip=0.0.0.0/0 -rpcauth=umbrel:5071d8b3ba93e53e414446ff9f1b7d7b$$375e9731abd2cd2c2c44d2327ec19f4f2644256fdeaf4fc5229bf98b778aafec -txindex=1 -server=1',
+        'command': '-port=30030 -rpcport=8332 -rpcbind=0.0.0.0 -rpcallowip=0.0.0.0/0',
         'volumes': [f'/{symbol}/node_{i}:/{symbol}/.{coin}'],
         'ports': [f"{30030+i}:30030", f"{8330+i}:8332"],  # Изменим порт на уникальный для каждого экземпляра
         'image': 'grinvest/fact:4.23.69',
