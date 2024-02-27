@@ -208,7 +208,7 @@ function settingsToMultilineConfString(settings) {
 
   // whitelist
   umbrelBitcoinConfig.push(`# Whitelist peers connecting from local Umbrel IP range. Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool.`);
-  umbrelBitcoinConfig.push(`whitelist=10.21.0.0/16`);
+  umbrelBitcoinConfig.push(`# whitelist=10.21.0.0/16`);
 
   // peerblockfilters
   if (settings.peerblockfilters) {
